@@ -9,6 +9,41 @@ https://drive.google.com/file/d/1-8TCnIEhdaN2F80DYMhScWUFwmf7sOq7/view?usp=shari
 eclipse
 -----------------
 https://www.eclipse.org/downloads/
+----------------------------SOFTWARE USED IN THE PROJECT----------------------------------
+FRONTEND
+-------------------------------
+HTML-----------------------DESIGN OF WEBPAGE
+CSS---------------------------STYLE
+JAVA SCRIPT--------------VALIDATION
+BOOTSTRAP--------------CREATING RESPONSIVE WEBPAGES(FIT TO ANY SCREEN)
+--------------------------------
+MIDDLE WARE
+--------------------------
+JSP/SERVLET
+SERVER---WEBLOGIC SERVER
+-------------------------------------------------
+BACKEND
+ORACLE
+--------------------------------------------------
+AWS/AI-----------------------
+---------------------------------------------
 
-select the second option.
+oracle:-
+---------------
+create table vidyastudent22(rollno number, name varchar2(30),address varchar2(30))
+
+insert into vidyastudent22 values(102,'kiran','hydrabad');
+
+select * from vidyastudent22;
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
