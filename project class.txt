@@ -36,8 +36,42 @@ insert into vidyastudent22 values(102,'kiran','hydrabad');
 
 select * from vidyastudent22;
 -------------------------------------------------------------
+core java
+--------------------
+example-1
+----------------
+package org.saturday;
 
-
+public class First
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("welcome to java");
+	}
+}
+-------------------------------------------------
+example-2
+---------------------
+package org.saturday;
+import java.util.*;
+public class Second 
+{
+public static void main(String[] args) 
+{
+System.out.println("Enter 5 nos");
+Scanner ob=new Scanner(System.in);
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=ob.nextInt();
+int d=ob.nextInt();
+int e=ob.nextInt();
+int sum=a+b+c+d+e;
+int avg=sum/5;
+System.out.println("the sum is "+sum);
+System.out.println("The average is "+avg);
+}
+}
+----------------------------------------------------------------------------
 
 
 
