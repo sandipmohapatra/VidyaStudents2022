@@ -72,8 +72,47 @@ System.out.println("The average is "+avg);
 }
 }
 ----------------------------------------------------------------------------
-
-
+example-3
+------------------------------
+package org.saturday;
+import java.util.*;
+public class Third 
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+if(a>b)
+	System.out.println("the greatest is "+a);
+else
+	System.out.println("the greatest is "+b);
+}
+}
+------------------------------------------------------------------
+example-4
+-------------------
+package org.saturday;
+import java.util.*;
+public class Third 
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("enter 3 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=ob.nextInt();
+if(a>b && a>c)
+	System.out.println("the greatest is "+a);
+else if(b>a && b>c)
+	System.out.println("the greatest is "+b);
+else
+	System.out.println("the greatest is "+c);
+}
+}
+---------------------------------------------------------
 
 
 
