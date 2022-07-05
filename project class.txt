@@ -176,7 +176,33 @@ System.out.println("row deleted");
 }
 }
 ---------------------------------------------------------------
-
+example-4
+-------------------
+Dynamic values at the runtime.
+-----------------------------------------
+package org.saturday;
+import java.sql.*;
+import java.util.*;
+public class Five 
+{
+public static void main(String[] args) throws Exception
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter rollno,name,address");
+	int rollno =ob.nextInt();
+	String name=ob.next();
+	String address=ob.next();
+Class.forName("oracle.jdbc.driver.OracleDriver"); //driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+PreparedStatement st=con.prepareStatement("insert into vidyastudent values(?,?,?)");
+st.setInt(1, rollno);
+st.setString(2,name);
+st.setString(3,address);
+st.execute();
+System.out.println("row inserted");
+}
+}
+-----------------------------------------------------------------------------------
 
 
 
