@@ -119,6 +119,14 @@ java (Byte code)-------Driver--------------Oracle(ASCII code)
 
 Driver is used to translate the byte code to ascii code and ascii code to byte code.
 
+--------------------------
+create table vidyastudent(rollno number,name varchar2(30),address varchar2(30));
+
+insert into vidyastudent values(101,'sandip','bangalore');
+
+select * from vidyastudent;
+--------------------------------------------------------------------------------------
+
 example-1
 --------------------
 package org.saturday;
@@ -203,7 +211,27 @@ System.out.println("row inserted");
 }
 }
 -----------------------------------------------------------------------------------
-
+example-5
+-------------------
+package org.saturday;
+import java.sql.*;
+import java.util.*;
+public class Five 
+{
+public static void main(String[] args) throws Exception
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter rollno");
+	int rollno =ob.nextInt();
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+PreparedStatement st=con.prepareStatement("delete from vidyastudent where rollno=?");
+st.setInt(1, rollno);
+st.execute();
+System.out.println("row deleted");
+}
+}
+---------------------------------------------------------------
 
 
 
