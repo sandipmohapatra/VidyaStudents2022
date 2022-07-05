@@ -135,6 +135,14 @@ System.out.println("row inserted");
 }
 }
 --------------------------------------------------------------------------
+path for oracle driver
+----------------------------
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar
+
+copy the jar file to your desktop.
+
+right click on your project-----properties-----java built path----Libraries----classpath-----add external jars----browse for the desktop ojdbc14.jar file.
+
 
 
 
