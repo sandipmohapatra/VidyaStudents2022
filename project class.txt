@@ -113,7 +113,28 @@ else
 }
 }
 ---------------------------------------------------------
+JDBC (Java database connectivity)
 
+java (Byte code)-------Driver--------------Oracle(ASCII code)
+
+Driver is used to translate the byte code to ascii code and ascii code to byte code.
+
+example-1
+--------------------
+package org.saturday;
+import java.sql.*;
+public class Third 
+{
+public static void main(String[] args) throws Exception
+{
+Class.forName("oracle.jdbc.driver.OracleDriver"); //driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");//connection
+Statement st=con.createStatement();
+st.execute("insert into vidyastudent values(102,'anil','Hydarabad')");
+System.out.println("row inserted");
+}
+}
+--------------------------------------------------------------------------
 
 
 
