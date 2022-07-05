@@ -143,7 +143,39 @@ copy the jar file to your desktop.
 
 right click on your project-----properties-----java built path----Libraries----classpath-----add external jars----browse for the desktop ojdbc14.jar file.
 
-
+-------------------------------------------
+example-2
+---------------------
+package org.saturday;
+import java.sql.*;
+public class Third 
+{
+public static void main(String[] args) throws Exception
+{
+Class.forName("oracle.jdbc.driver.OracleDriver"); //driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+Statement st=con.createStatement();
+st.execute("update vidyastudent set address='Bangalore' where rollno=102");
+System.out.println("row updated");
+}
+}
+-------------------------------------------
+example-3
+------------------
+package org.saturday;
+import java.sql.*;
+public class Fourth 
+{
+public static void main(String[] args) throws Exception
+{
+Class.forName("oracle.jdbc.driver.OracleDriver"); //driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+Statement st=con.createStatement();
+st.execute("delete from vidyastudent where rollno=102");
+System.out.println("row deleted");
+}
+}
+---------------------------------------------------------------
 
 
 
