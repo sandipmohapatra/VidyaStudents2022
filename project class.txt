@@ -255,5 +255,31 @@ System.out.println("row updated");
 }
 }
 ------------------------------------------------------------------------------
+example-7
+-----------------
+package org.saturday;
+import java.sql.*;
+public class Five 
+{
+public static void main(String[] args) throws Exception
+{
+Class.forName("oracle.jdbc.driver.OracleDriver"); //load driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+PreparedStatement st=con.prepareStatement("select * from vidyastudent");
+ResultSet rs=st.executeQuery();
+while(rs.next())
+{
+	System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3));
+}
+}
+}
+----------------------------------------
+ResultSet will create a memory block which will store the whole table.
+We have a method next() which will move the cursor to the next row ,till it reaches end of the row.
+----------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
