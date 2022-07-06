@@ -277,7 +277,30 @@ while(rs.next())
 ResultSet will create a memory block which will store the whole table.
 We have a method next() which will move the cursor to the next row ,till it reaches end of the row.
 ----------------------------------------------------------------------------------------------------------
-
+example-8
+-----------------
+package org.saturday;
+import java.sql.*;
+import java.util.*;
+public class Five 
+{
+public static void main(String[] args) throws Exception
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("enter the rollno you want to search");
+	int rollno=ob.nextInt();
+Class.forName("oracle.jdbc.driver.OracleDriver"); //load driver for oracle
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+PreparedStatement st=con.prepareStatement("select * from vidyastudent where rollno=?");
+st.setInt(1, rollno);
+ResultSet rs=st.executeQuery();
+while(rs.next())
+{
+	System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3));
+}
+}
+}
+--------------------------------------------------------------------------------------------------
 
 
 
