@@ -10,3 +10,17 @@
 </table>
 </form>
 </html>
+-----------------------------------------
+<%String a=request.getParameter("t1");
+String b=request.getParameter("t2");
+String c=request.getParameter("t3");
+String d=request.getParameter("t4");%>
+
+<%out.println("The name is "+a);
+out.println("<br>");
+out.println("The address is "+b);
+out.println("<br>");
+out.println("The phoneno is "+c);
+out.println("<br>");
+out.println("The email is "+d);%>
+-----------------------------------------------------------------------------------
