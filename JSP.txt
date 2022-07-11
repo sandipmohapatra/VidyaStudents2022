@@ -1,3 +1,7 @@
+JAVA SERVER PAGES
+-------------------------------------------------
+Example-1
+----------------------------------------------------------------------
 <html>
 <h1><center>Student Registration Page</center></h1><hr>
 <form action=second.jsp>
@@ -24,3 +28,48 @@ out.println("The phoneno is "+c);
 out.println("<br>");
 out.println("The email is "+d);%>
 -----------------------------------------------------------------------------------
+example-2
+-----------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Simple Calculator </center></h1><hr>
+<form action=second.jsp>
+<table>
+<tr><td>Enter a no<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter a no<td><input type=text name=t2 size=20></tr>
+<tr><td><td><input type=submit name=b1 value=add>
+<input type=submit name=b1 value=sub>
+<input type=submit name=b1 value=mul>
+<input type=submit name=b1 value=div></tr>
+</table>
+</form>
+</body>
+</html>
+------------------------------------------------------------------
+<% String a=request.getParameter("t1");
+String b=request.getParameter("t2");
+String cal=request.getParameter("b1");%>
+
+<%
+if(cal.equals("add"))
+{
+int c=Integer.parseInt(a)+Integer.parseInt(b);
+out.println("The sum is "+c);
+}
+else if(cal.equals("sub"))
+{
+int c=Integer.parseInt(a)-Integer.parseInt(b);
+out.println("The sub is "+c);
+}
+else if(cal.equals("mul"))
+{
+int c=Integer.parseInt(a)*Integer.parseInt(b);
+out.println("The mul is "+c);
+}
+else 
+{
+int c=Integer.parseInt(a)/Integer.parseInt(b);
+out.println("The div is "+c);
+}
+%>
+---------------------------------------------------------------------------
