@@ -73,3 +73,22 @@ out.println("The div is "+c);
 }
 %>
 ---------------------------------------------------------------------------
+example-3
+------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Student DataBase</center></h1><hr>
+<form action=second.jsp>
+<table>
+<tr><td>Enter rollno<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter name<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter address<td><input type=text name=t3 size=20></tr>
+<tr><td><td>
+<input type=submit name=b1 value=insert>
+<input type=submit name=b1 value=update>
+<input type=submit name=b1 value=delete>
+<input type=submit name=b1 value=select>
+</tr>
+</table></form>
+</body></html>
+------------------------------------------------------------
