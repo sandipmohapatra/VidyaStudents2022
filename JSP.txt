@@ -205,6 +205,19 @@ else
 %>
 
 --------------------------------------------------------------------------------------------------
+For Select we have to use ResultSet .It's object will store the whole table .
+
+ResultSet rs=st.executeQuery("select * from vidyastudent");
+while(rs.next())
+{
+System.out.println(rs.getInt(1)+"   "+rs.getString(2)+"  "+rs.getString(3));
+}
+
+rs.next() :- will move the cursor to the next record.
+
+System.out.println(rs.getInt(1)+"   "+rs.getString(2)+"  "+rs.getString(3));
+will print the rows one by one.
+-------------------------------------------------------------------------------------------------
 
 
 
