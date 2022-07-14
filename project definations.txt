@@ -1,0 +1,54 @@
+Hardware requirement :- i3,4gb ram,1tb,
+sofware requirements :- html,css,javascript,servlet,weblogic server
+To the client we will not give the source code.we have to give the .class file in a zipped manner.
+----------------------------------
+online line job portal
+----------------------------------
+user module
+--------------------
+Home page tells about the project
+1)student registration 
+2)login module
+3)online MCQ test
+4)we can view the jobs available
+5)we can apply for the jobs.
+there are varities of jobs
+i)hardware ii)software iii)govt jobs iv) etc
+
+---------------------
+admin module
+---------------------
+1)login
+2)view the resume and student details
+3)view the details of the registered students.
+----------------------------------------------------------------------
+crime control system
+----------------------------------------
+1)Home page tells about the project (different types of crimes)
+2)user regsister a complaint
+3)user can see the status of the complaint
+example:-bike stollen,harreshments at job
+------------------------------------------------------------------------
+admin (police man)
+1)view the complaint
+2)update the status.
+3)do concelling
+--------------------------------------------------------------------
+event planner
+----------------------
+1)home page we have 9 types of events
+2)user can register and buy tickets
+3)view the upcomming events
+4)user can book the events
+5)view previous years events 
+6)gallery of previous events
+-------------------
+admin
+-------------
+1)admin login
+2)add upcomming events
+3)view registered users report.
+------------------------------------------------------------------------------------
+
+
+
