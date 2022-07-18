@@ -1,8 +1,8 @@
-Hardware requirement :- i3,4gb ram,1tb,
-sofware requirements :- html,css,javascript,servlet,weblogic server
+Hardware requirement :- laptop i3,4gb ram,1tb harddisk,
+sofware requirements :- html,css,javascript,servlet,weblogic server,oracle
 To the client we will not give the source code.we have to give the .class file in a zipped manner.
 ----------------------------------
-online line job portal
+1)online line job portal
 ----------------------------------
 user module
 --------------------
@@ -22,7 +22,7 @@ admin module
 2)view the resume and student details
 3)view the details of the registered students.
 ----------------------------------------------------------------------
-crime control system
+2)crime control system
 ----------------------------------------
 1)Home page tells about the project (different types of crimes)
 2)user regsister a complaint
@@ -34,7 +34,7 @@ admin (police man)
 2)update the status.
 3)do concelling
 --------------------------------------------------------------------
-event planner
+3)event planner
 ----------------------
 1)home page we have 9 types of events
 2)user can register and buy tickets
@@ -49,6 +49,91 @@ admin
 2)add upcomming events
 3)view registered users report.
 ------------------------------------------------------------------------------------
+4)E-music system
+--------------------------
+1)User can view all the CD/DVD present
+2)user can order for any CD/DVD
+3)listen to the CD/DVD online
+4)feedBack form
+-----------------------
+admin
+1)view the report.
+2)The CD/DVD will be delivered to the given address
+--------------------------------------------------------------------------
+5)online Insuurance
+----------------------------
+1)user registration/login
+2)view the insurance details
+3)They can insure the house/vechile/family
+4)agent details
+5)admin details
+-----------------------------------
+admin
+1)view the registered policies
+2)view registered user
+--------------------------------------------------------
+6)Travel Guide
+------------------------
+1)user register/login
+2)book hotels
+3)view the details of hotel
+4)tourist places details
+5)feedback
+6)agent details.
+admin
+----------------
+1)view reports of the customers.
+---------------------------------------------------------------------
+7)Hotel Management
+--------------------------------
+1)regsister
+2)book table
+3)book cab
+4)feedback
+admin
+------------
+1)view registered users report
+2)view reports of the user feedback
+-------------------------------------------------------------
+8)railway reservation
+-------------------------
+1)regsiter user/login
+2)book ticket
+3)cancel ticket
+4)view maps
+5)view train details
+--------------
+admin
+--------------
+1)upload train details
+2)view ticket details.
+-----------------------------------------------------------------------------
+9)online framing 
+-----------------------------
+1)register
+2)buy sell seeds/food grains/machinaries
+3)feedback
+4)apply for rent farming goods.
+----------------------------------
+admin
+---------------------
+1)view the sell/buy/rent farming details
+-------------------------------------------------------------------
+10)Magazine shop
+--------------------------------
+1)regsiter/login
+2)premium user/non-premium users
+3)pay fees monthly /yearly for memberships
+4)download magazine applicable for premium users
+5)view daily news  
+6)feedback
+-------------------------
+admin
+--------------
+1)view user details.
+2)view feedback of users.
+--------------------------------------------
+
 
 
 
