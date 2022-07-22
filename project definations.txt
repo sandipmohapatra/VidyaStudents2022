@@ -133,6 +133,16 @@ admin
 1)view user details.
 2)view feedback of users.
 --------------------------------------------
+How to run a project
+-------------------------------
+step 1:- start the server (don't close it)minimize it.
+step 2:- paste the table into oracle
+step 3:-paste the war file into C:\bea\user_projects\domains\mydomain\applications
+----------------------------------------------
+step 4:- localhost:7001/<war file name>/<firstpage.html>
+-------------------
+localhost:7001/job/index.html
+-----------------------------------------------------------------------------------------
 
 
 
