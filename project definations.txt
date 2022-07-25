@@ -143,7 +143,28 @@ step 4:- localhost:7001/<war file name>/<firstpage.html>
 -------------------
 localhost:7001/job/index.html
 -----------------------------------------------------------------------------------------
+How to make change in HTML
+-------------------------------------------------------------
+step 1:-C:\bea\user_projects\domains\mydomain\setenv
 
+step 2:-paste it on the desktop
 
+step 3:-change the html page.
+
+step 4:-goto the path
+
+step 5:-set java path
+
+set path=C:\Program Files\Java\jdk-14.0.2\bin;.;
+
+or
+
+drag and drop
+
+*make change in the html file.
+---------------------------------------------
+step 6:-jar -cvf job.war .
+
+step 7:-paste the war file into C:\bea\user_projects\domains\mydomain\applications
 
 
