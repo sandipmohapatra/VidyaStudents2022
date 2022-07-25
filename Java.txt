@@ -1,0 +1,2721 @@
+Java
+---------------
+1)java is object oriented programming language.
+2)Java is simpler than c and c++ as we don' t have pointer concept,multiple inheritance,operator overloading.
+3)java supports multi-threading or multi-tasking.
+4)we can develop web-application,network application,standalone application and also mobile application.
+5)In java we use interface to perform multiple inheritance.
+6)In java we have constructor but no destructor .There is automatic garbage clearance.
+7)java is secure language.We have 4 access specifier private,public ,protected,default.
+8)The file name and the class name should be same in java.
+-----------------------------------------------------------
+A class contains variables and methods .It is a collection of variables and methods.
+An object is a reference pointer to the class.we need object to access them variables and methods of the class.
+------------------------------------------------------------
+Data types
+----------------------
+1)byte - 1 byte
+2)short - 2bytes
+3)int - 4bytes
+4)long -8bytes
+5)float - 4 bytes
+6)double - 8bytes
+7)boolean - 1 bit
+8)char - 2bytes
+------------------------------------
+derived datatype
+1)class
+2)String
+3)array of characters,array of numbers.
+--------------------------------------------------------------
+example-1
+------------------
+class First 
+{
+public static void main(String[] args) 
+{
+	byte a=10;
+	short b=20;
+	int c=30;
+	long d=40;
+	float e=5.6f;
+	double f=66.4;
+	char g='a';
+	String h="apple";
+	System.out.println("The value of a is "+a);
+	System.out.println("The value of b is "+b);
+	System.out.println("The value of c is "+c);
+	System.out.println("The value of d is "+d);
+	System.out.println("The value of e is "+e);
+	System.out.println("The value of f is "+f);
+	System.out.println("The value of g is "+g);
+	System.out.println("The value of h is "+h);
+	
+}
+}
+----------------------------------------------------------
+Scanner is class to take input from the keyboard.
+System.out.println("The value of a is "+a);
+
+This is for output.
+
+System.in:- This is for input.
+---------------------------------------------------
+System is predefined class.
+out is an predefined object.
+in is an predefined object.
+println() :- is a predifined method.
+------------------------------------------------------------------------
+example 2
+----------------
+class First 
+{
+public static void main(String[] args) 
+{
+	int a=10,b=20,c=30,d=40,e=50;
+	int sum=a+b+c+d+e;
+	int avg=sum/5;
+	System.out.println("The sum is "+sum);
+	System.out.println("The avg is "+avg);
+	}
+}
+-----------------------------------------------------------
+to take input from keyboard
+-----------------------------------------------
+example-3
+---------------
+import java.lang.*; <---packages
+import java.util.*;<--packages
+class First 
+{
+public static void main(String[] args) 
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter 2 nos");
+	int a=ob.nextInt();
+	int b=ob.nextInt();
+	int sum=a+b;
+	System.out.println("The sum is "+sum);
+	}
+}
+-------------------------------------------------------------------------------
+import java.lang.*;
+import java.util.*;
+class First 
+{
+public static void main(String[] args) 
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter 2 nos");
+	float a=ob.nextFloat();
+	float b=ob.nextFloat();
+	float sum=a+b;
+	System.out.println("The sum is "+sum);
+	}
+}
+-----------------------------------------------------------------
+nextInt() :- predefined method for taking integer as input.
+nextFloat():- predefined method for taking float as input.
+Scanner ob=new Scanner(System.in);
+This is a class beloging to util package.to take input from the keyboard.
+------------------------------------------------------------------------------------------------
+package 
+	|
+	|
+classes
+	|
+methods()
+
+--------------------------------------------------
+if-else
+---------------
+if-else if-else
+--------------------------
+if-else if-else if-else
+------------------------------------
+case and switch
+----------------------------------
+example-1
+-----------------
+package org.sandip;
+import java.util.*;
+public class Second
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+if(a>b)
+	System.out.println("the greatest is "+a);
+else
+	System.out.println("the greatest is "+b);
+}
+}
+-------------------------------------------------------------
+package org.sandip;
+import java.util.*;
+public class Second
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("enter 3 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=ob.nextInt();
+if(a>b && a>c)
+	System.out.println("the greatest is "+a);
+else if(b>a && b>c)
+	System.out.println("the greatest is "+b);
+else
+	System.out.println("the greatest is "+c);
+}
+}
+-------------------------------------------------------------------------------------------
+package org.sandip;
+import java.util.*;
+public class Second
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("enter a nos");
+int a=ob.nextInt();
+if(a%2==0)
+	System.out.println("the no is even ");
+else
+	System.out.println("the no is odd ");
+}
+}
+--------------------------------------------------------------
+wap to enter your age and find if you are eligible to vote.
+------------------------------------------------------
+import java.util.*;
+public class AgeDemo 
+{
+public static void main(String[] args) {
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter your age");
+	int age=ob.nextInt();
+	if(age>=18)
+		System.out.println("eligible to vote");
+	else
+		System.out.println("not eligible to vote");
+}
+}
+----------------------------------------------------------------------------------------
+wap to enter your name,address,3 subjects marks and find sum,avg and grade.
+if(avg>=70)first division
+if(avg>=60)second division
+if(avg>=50)third division
+else
+fail
+------------------------------------------------------------------------
+import java.util.*;
+public class Second
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("enter your name,address");
+String name=ob.next();
+String address=ob.next();
+System.out.println("enter 3 subject's marks");
+int phy=ob.nextInt();
+int chem=ob.nextInt();
+int bio=ob.nextInt();
+int sum=phy+chem+bio;
+int avg=sum/3;
+System.out.println("name is "+name);
+System.out.println("address is "+address);
+System.out.println("sum is "+sum);
+System.out.println("avg is "+avg);
+if(avg>=70)
+	System.out.println("First Division");
+else if(avg>=60)
+	System.out.println("second division");
+else if(avg>=50)
+	System.out.println("Third division");
+else
+	System.out.println("fail");
+}
+}
+-----------------------------------------------------------
+1)next():- It is a pre-defined function to take string as input.
+2)nextInt():- It is a pre-defined function to take integer as input.
+3)nextFloat():- It is a pre-defined function to take float as input.
+--------------------------------------------------------------------------------
+case and switch
+---------------------------
+we will enter a value for switch and the control will jump to the particular case.exceute the program and then terminate.
+
+switch(value)
+{
+case 1:
+break;
+case 2:
+break;
+-----
+-------
+default:
+}
+------------------------------------------------------------------------------------
+example-1
+------------------
+package org.sandip;
+import java.util.*;
+public class CaseSwitch 
+{
+public static void main(String[] args) 
+{
+	Scanner ob=new Scanner(System.in);//to take input from keyboard
+	System.out.println("Enter a no");
+	int a=ob.nextInt();
+	switch(a)
+	{
+	case 1:System.out.println("one");
+	break;
+	case 2:System.out.println("two");
+	break;
+	case 3:System.out.println("three");
+	break;
+	case 4:System.out.println("four");
+	break;
+	case 5:System.out.println("five");
+	break;
+	default:System.out.println("wrong input");
+	}
+}
+}
+----------------------------------------------------------------------
+example-2
+-----------------
+package org.sandip;
+import java.util.*;
+public class CaseSwitch 
+{
+public static void main(String[] args) 
+{
+	Scanner ob=new Scanner(System.in);//to take input from keyboard
+	System.out.println("Enter a no(1.add,2.sub,3.mul,4.div)");
+	int a=ob.nextInt();
+	switch(a)
+	{
+	case 1:
+		System.out.println("enter 2 nos");
+		int x=ob.nextInt();
+		int y=ob.nextInt();
+		int sum=x+y;
+		System.out.println("The sum is "+sum);
+	break;
+	case 2:System.out.println("enter 2 nos");
+	x=ob.nextInt();
+	y=ob.nextInt();
+	int sub=x-y;
+	System.out.println("The sub is "+sub);
+	break;
+	case 3:System.out.println("enter 2 nos");
+	x=ob.nextInt();
+	y=ob.nextInt();
+	int mul=x*y;
+	System.out.println("The mul is "+mul);
+	break;
+	case 4:System.out.println("enter 2 nos");
+	x=ob.nextInt();
+	y=ob.nextInt();
+	int div=x/y;
+	System.out.println("The div is "+div);
+	break;
+	
+	default:System.out.println("wrong input");
+	}
+}
+}
+-----------------------------Assignment-1-----------------------------------
+wap to create a bank project.use case and switch.
+bank --enter accno,name,balance=5000
+1.withdraw and 2.deposite should be your choice in case and switch.
+check if withdraw less than balance your can withdraw.
+Display accno,name,balance,final balance.
+----------------------------------------------------------------------------------------------------
+import java.util.*;
+public class Second
+{
+public static void main(String[] args) 
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("Enter accno,name,balance");
+int accno=ob.nextInt();
+String name=ob.next();
+float bal=ob.nextFloat();
+System.out.println("Enter 1.withdraw 2.deposite");
+int choice=ob.nextInt();
+switch(choice)
+{
+case 1:
+	System.out.println("Enter the amount you want to withdraw");
+	float withd=ob.nextFloat();
+	if(bal>withd)
+	{
+		bal=bal-withd;
+		System.out.println("the final balance is "+bal);
+	}
+	else
+	{
+		System.out.println("sorry balance is less");
+	}
+	break;
+case 2:
+	System.out.println("Enter the amount you want to deposite");
+	float dip=ob.nextFloat();
+	bal=bal+dip;
+	System.out.println("the final balance is "+bal);
+	break;
+default:
+	System.out.println("wrong input");
+}
+}
+}
+
+---------------------------------------------------------------------------
+class and object
+----------------------------
+class contains variables and methods.
+
+variables:- rollno,name,address
+methods :- input(),display();
+-------------------------------------------------------------
+Object :- with objects we can access variables and methods of the class.
+-------------------------------------------------------------
+example-1
+---------------
+package org.sandip;
+import java.util.*;
+public class Student 
+{
+int rollno;   // variables
+String name,address;
+void input()
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter rollno,name,address");
+	rollno=ob.nextInt();
+	name=ob.next();
+	address=ob.next();
+}
+void display()
+{
+	System.out.println("the rollno is "+rollno);
+	System.out.println("the name is "+name);
+	System.out.println("the address is "+address);
+	}
+public static void main(String[] args) 
+{
+	Student obj=new Student();//for the class we are creating object ob.
+	obj.input();
+	obj.display();
+}
+}
+------------------------------------------------------------------------
+syntax for creating an object
+------------------------------------------------
+	Student obj=new Student();
+Student is a class.obj is an object.
+new is a keyword to create memory block.
+Student() :- it is a default constructor .
+without Object a class is meaning less we cannot access the class.
+
+1)class a object factory.
+----------------------------------------------------
+wap to create a employee class (empno,name,salary)
+take input and display it.
+-------------------------------------------------------------------------
+example-1
+----------------
+package org.sandip;
+import java.util.*;
+public class Employee 
+{
+int empno;
+String name,address;
+float salary;
+void input()
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter empno,name,address,salary");
+	empno=ob.nextInt();
+	name=ob.next();
+	address=ob.next();
+	salary=ob.nextFloat();
+}
+void display()
+{
+	System.out.println("the empno is "+empno +"The name is "+name);
+	System.out.println("the address is "+address +"The salary is "+salary);
+	
+}
+public static void main(String[] args) {
+	Employee ob=new Employee();
+	ob.input();
+	ob.display();
+}
+}
+--------------------------------------------------------------
+void ---There will be no return statement
+int ,float,long,String,double we have a return statement.
+-------------------------------------------------
+
+package org.sandip;
+import java.util.*;
+public class Employee 
+{
+int empno;
+String name,address;
+float salary;
+void input()
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter empno,name,address,salary");
+	empno=ob.nextInt();
+	name=ob.next();
+	address=ob.next();
+	salary=ob.nextFloat();
+}
+int sum(int a,int b)
+{
+	return a+b;
+}
+void display()
+{
+	System.out.println("the empno is "+empno +"The name is "+name);
+	System.out.println("the address is "+address +"The salary is "+salary);
+	
+}
+public static void main(String[] args) {
+	Employee ob=new Employee();
+	ob.input();
+	ob.display();
+	System.out.println("The sum is "+ob.sum(5, 6));
+}
+}
+-------------------------------------------------------------------------------
+create a bank class having accno,name,balance
+take input and display it.
+-----------------------------------------------------------------------------------
+java is secured Language.we have 4 access specifier 1)private 2)public 3)protected 4)default
+Access specifier
+----------------------------
+1)private:- if we declare variables and methods as private we can access it within the class only.
+2)public:- if we declare variables and methods as public we can access it within the class ,outside the class and outside the package.
+3)protected:- if we declare variables and methods as protected we can access it within the class and in the child class.
+4)default:- if we declare variables and methods as default we can access it within the class ,outside the class but not outside the package.
+--------------------------------------------------------------------
+step 1:java program we have to save by .java ext
+step 2:compile it
+step 3:JVM(java virtual machine) convert the java program to byte code with .class extention
+step 4:The byte code  can run on any os
+step 5:so java is called platform independent.
+--------------------------------------------------------------------------------------------------
+googl crome ----download jdk1.8 download----install
+open command prompt
+step 1:-set path=C:\Program Files\Java\jdk1.7.0_45\bin;.;
+step 2:write the program
+step 3:- to compile the java prg---->javac Filename.java
+step 4:-java Filename
+------------------------------------------------------------------------------------------
+wap to create a product class (prodid,pname,pprice);
+---------------------------------------------------------------------------------------
+example-1
+-------------------
+package org.sandip;
+import java.util.*;
+public class Product 
+{
+int prodid;
+String pname;
+float pprice;
+void input()
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter productid,pname,pprice");
+	prodid=ob.nextInt();
+	pname=ob.next();
+	pprice=ob.nextFloat();
+}
+void display()
+{
+	System.out.println("the product id is "+prodid);
+	System.out.println("the product name is "+pname);
+	System.out.println("the product price is "+pprice);
+}
+public static void main(String[] args) 
+{
+	Product p=new Product();
+	p.input();
+	p.display();
+	System.out.println(p.prodid);
+	System.out.println(p.pname);
+	System.out.println(p.pprice);
+}
+}
+
+------------------------------------------------------------------------------------------------
+wap to enter a student data( rollno,name,address,phy,chem,bio marks).
+find total and average of marks using class and object.
+--------------------------------------------------------------------------------------------------
+
+create a bank class (accno,name,balance)
+do withdraw or deposite for the customer and display the final balance.
+---------------------------------------------------------
+class :- variable and methods.methods has return type
+int sum(int a,int b);  :- int is a return type.
+float sum(float a,float b); :-float is a return type.
+----------------------------------------------------------------------------
+when you have same function name with different datatype the parameter and return type it is known as function overloading.
+----------------------------------------------------------------------------------
+example-11
+--------------------
+package org.sandip;
+
+public class MethodDemo 
+{
+int sum(int a,int b)   <-----function has parameter,return type.
+{
+	return a+b;
+}
+float sum(float a,float b)
+{
+	return a+b;
+}
+double sum(double a,double b)
+{
+	return a+b;
+}
+public static void main(String[] args) {
+	MethodDemo ob=new MethodDemo();
+	System.out.println("The sum is "+ob.sum(4,5));
+	System.out.println("The sum is "+ob.sum(14,15));
+	System.out.println("The sum is "+ob.sum(14.3f,15.3f));
+	System.out.println("The sum is "+ob.sum(44.22,54.33));
+	}
+}
+----------------------------------------------------------------------------
+example-12
+--------------------------
+package org.sandip;
+
+public class MethodDemo 
+{
+int sum(int a,int b)
+{
+	return a+b;
+}
+float sum(float a,float b)
+{
+	return a+b;
+}
+double sum(double a,double b)
+{
+	return a+b;
+}
+void sum1(long a,long b)
+{
+	System.out.println("The sum is "+(a+b));
+}
+public static void main(String[] args) {
+	MethodDemo ob=new MethodDemo();
+	System.out.println("The sum is "+ob.sum(4,5));  
+	System.out.println("The sum is "+ob.sum(14,15));
+	System.out.println("The sum is "+ob.sum(14.3f,15.3f));
+	System.out.println("The sum is "+ob.sum(44.22,54.33));
+	ob.sum1(78,76);
+	}
+}
+---------------------------------------------------------------------------------------------------
+wap to enter 2 int,2 float and find the greatest among the 2.
+---------------------------------------------------------------------------------------
+example-3
+-------------------
+package org.sandip;
+
+public class MethodDemo2 
+{
+int greater(int a,int b)
+{
+	if(a>b)
+	return a;
+	else
+		return b;
+}
+float greater(float a,float b)
+{
+	if(a>b)
+		return a;
+		else
+			return b;
+}
+
+public static void main(String[] args) {
+	MethodDemo2 ob=new MethodDemo2();
+	System.out.println("The greater is "+ob.greater(4,5));  
+	System.out.println("The greater is "+ob.greater(14,15));
+	System.out.println("The greater is "+ob.greater(14.3f,15.3f));
+	
+	}
+}
+------------------------------------------------------------------------------------------------------
+example-4
+------------------
+package org.sandip;
+
+public class Revision1 
+{
+	int x=11;  //<--intance variable you can access throught out the class -- >
+int sqr(int a) //local variable you can access it within the method .
+{
+	return a*a;
+}
+float sqr(float a)
+{
+	return a*a;
+}
+double sqr(double a)
+{
+	return a*a;
+}
+public static void main(String[] args)
+{
+	Revision1 ob=new Revision1();
+	System.out.println("the value of x is "+ob.x);
+	System.out.println("the value of a is "+ob.sqr(20));
+	System.out.println("the value of a is "+ob.sqr(60.0f));
+	System.out.println("the value of a is "+ob.sqr(70.0));
+	
+}
+}
+---------------------------------------------------------------------------------------
+example-5
+----------------
+package org.sandip;
+import java.util.*;
+public class Revision1 
+{
+	int x=11;  //<--intance variable you can access throught out the class -- >
+int sqr(int a) //local variable you can access it within the method .
+{
+	return a*a;
+}
+float sqr(float a)
+{
+	return a*a;
+}
+double sqr(double a)
+{
+	return a*a;
+}
+public static void main(String[] args)
+{
+	Revision1 ob=new Revision1();
+	Scanner obj=new Scanner(System.in);
+	System.out.println("Enter a integer");
+	int s1=obj.nextInt();
+	System.out.println("the value of x is "+ob.x);
+	System.out.println("the value of a is "+ob.sqr(s1));
+	System.out.println("the value of a is "+ob.sqr(60.0f));
+	System.out.println("the value of a is "+ob.sqr(70.0));
+	
+}
+}
+-----------------------------------------------------------------------------------------------
+Constructor:- It is a function which has the same name as that of the class name.
+It doesnot return any value.It is used to assign values at the runtime.
+example-1
+-----------------
+package org.constructor;
+
+public class ConstructorDemo 
+{
+int rollno;//instance variable can be accessed through out the class.
+String name,address;
+ ConstructorDemo(int rollno, String name, String address) //local variable
+{
+	this.rollno = rollno;//assigning to the instance variables.
+	this.name = name;
+	this.address = address;
+}
+ void display()
+  {
+	 System.out.println("The rollno is "+rollno);
+	 System.out.println("The name is "+name);
+	 System.out.println("The address is "+address);
+  }
+ 
+public static void main(String[] args) {
+	ConstructorDemo ob=new ConstructorDemo(101,"Binay","Bangalore");
+	ob.display();
+}
+}
+----------------------------------------------------------------------------------------------------------------------
+wap to enter 3 employee data and display it(empno,name,designation,salary)
+-----------------
+package org.constructor;
+
+public class ConstructorDemo 
+{
+int rollno;//instance variable can be accessed through out the class.
+String name,address;
+ ConstructorDemo(int rollno, String name, String address) //local variable
+{
+	this.rollno = rollno;//assigning to instance variables.
+	this.name = name;
+	this.address = address;
+}
+ void display()
+  {
+	 System.out.println("The rollno is "+rollno);
+	 System.out.println("The name is "+name);
+	 System.out.println("The address is "+address);
+  }
+ 
+public static void main(String[] args) {
+	ConstructorDemo ob1=new ConstructorDemo(101,"Binay","Bangalore");
+	ConstructorDemo ob2=new ConstructorDemo(102,"Totendra","Bangalore");
+	ConstructorDemo ob3=new ConstructorDemo(103,"swarna","Bangalore");
+		ob1.display();
+		ob2.display();
+		ob3.display();
+		
+}
+}
+-----------------------------------------------------------------------------
+Inserting value at the runtime.
+-------------------------------------------------------------
+example-
+package org.constructor;
+import java.util.*;
+public class ConstructorDemo2 
+{
+int rollno;//instance variable can be accessed through out the class.
+String name,address;
+ ConstructorDemo2(int rollno, String name, String address) //local variable
+{
+	this.rollno = rollno;//assigning to instance variables.
+	this.name = name;
+	this.address = address;
+}
+ void display()
+  {
+	 System.out.println("The rollno is "+rollno);
+	 System.out.println("The name is "+name);
+	 System.out.println("The address is "+address);
+  }
+ 
+public static void main(String[] args) 
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter rollno,name,address");
+	int r=ob.nextInt();
+	String n=ob.next();
+	String add=ob.next();
+	ConstructorDemo2 ob1=new ConstructorDemo2(r,n,add);
+			ob1.display();
+		
+}
+}
+--------------------------------------------------------------------------------------------------------------------
+OOPS Concept
+------------------------------
+1)Inheritance
+2)Polymorphysim
+3)Abstraction
+4)Encapsulation.
+--------------------------------------------------------------------------------
+Inheritance :- It one of  the oops concept in which  the child class will inherite the parent class properties.
+we the use the keyword "extends" to inherite the parent class into the child class.
+We use the keyword "super" to access the parent class variables and methods into the child class.
+In the parent class we don't have the main method.we will have it in child class.we will create object of the child class only and access the child class as well as parent class variables and methods.
+
+example:- windows-7,windows-8,windows-10,.....(re-using of existing parent class) 
+---------------------------------------------------------------------------------------------------------------------------------------------
+student class(rollno,name,address)
+acadamic class extends student class.(phy,chem,bio,total)
+-----------------------------------------------------------------------------------------
+example-1
+-------------------
+package org.constructor;
+public class Student 
+{
+int rollno;
+String name,address;
+public Student(int rollno, String name, String address) 
+{
+	this.rollno = rollno;
+	this.name = name;
+	this.address = address;
+}
+void display()
+{
+	System.out.println("The rollno is "+rollno);
+	System.out.println("The name is "+name);
+	System.out.println("The address is "+address);
+	}
+}
+---------------------------------------------------------------------------
+package org.constructor;
+
+public class Academic extends Student
+{
+int phy,chem,bio,total;
+
+public Academic(int rollno, String name, String address, int phy, int chem, int bio) {
+	super(rollno, name, address);//first the super class constructor will execute then the sub-class constructor .
+	this.phy = phy;
+	this.chem = chem;
+	this.bio = bio;
+	}
+void display()
+{
+	super.display();//parent class display
+	System.out.println("the physics marks is "+phy);
+	System.out.println("the chemistry marks is "+chem);
+	System.out.println("the biology marks is "+bio);
+	System.out.println("the total marks is "+(phy+chem+bio));
+	}
+public static void main(String[] args) 
+{
+	Academic ob=new Academic(101,"sandip","bangalore",66,77,88);
+	ob.display();
+}
+}
+-------------------------------------------------------------------------------------------------------------
+wap to create a parent class employee(empno,name,address)
+create a child class empdetails(dept,salary,age)
+enter the data using constructor and display it.
+--------------------------------------------------------------------------------- 
+example-1
+-----------------------------
+package org.constructor;
+
+public class Employee 
+{
+	int empno;
+	String name,address;
+	public Employee(int empno, String name, String address) {
+		super();
+		this.empno = empno;
+		this.name = name;
+		this.address = address;
+	}
+	
+	void display()
+	{
+		System.out.println("The empno is"+empno);
+		System.out.println("The name is"+name);
+		System.out.println("The address is"+address);
+			}
+}
+-----------------------------------------------
+package org.constructor;
+
+public class EmployeeDetails extends Employee
+{
+	String dept;
+	float salary,age;
+	public EmployeeDetails(int empno, String name, String address, String dept, float salary, float age) 
+	{
+		super(empno, name, address);
+		this.dept = dept;
+		this.salary = salary;
+		this.age = age;
+	}
+	void display()
+	{
+		super.display();
+		System.out.println("the dept is "+dept);
+		System.out.println("the salary is "+salary);
+		System.out.println("the age is "+age);
+			}
+	public static void main(String[] args) {
+		EmployeeDetails ob=new EmployeeDetails(101,"sandip","Bangalore","sales",5600.45f,22);
+		ob.display();
+	}
+}
+-----------------------------------------------------------------------------------------------
+Inheritance :- parent's properties accessed by child is known as inheritance.
+to perforrm inheritance we have to use extends keyword.
+To access the parent class variable and methods we use super keyword.
+----------------------------------------------------------
+example-
+package org.constructor;
+
+public class Bank 
+{
+int icode;
+String bname,bloc;
+public Bank(int icode, String bname, String bloc)
+{
+	this.icode = icode;
+	this.bname = bname;
+	this.bloc = bloc;
+}
+void display()
+{
+	System.out.println("The IFICI code is :"+icode);
+	System.out.println("The bank name is :"+bname);
+	System.out.println("The bank location is :"+bloc);
+	}
+}
+--------------------------------------------------
+package org.constructor;
+
+public class Customer extends Bank 
+{
+int accno;
+String name,balance;
+public Customer(int icode, String bname, String bloc, int accno, String name, String balance)
+{
+	super(icode, bname, bloc);
+	this.accno = accno;
+	this.name = name;
+	this.balance = balance;
+}
+void display()
+{
+	super.display();
+	System.out.println("the accno is "+accno);
+	System.out.println("the name is "+name);
+	System.out.println("the balance is "+balance);
+	}
+public static void main(String[] args) {
+	Customer ob=new Customer(101,"SBI","MG Road",1001,"sandip","5000");
+	ob.display();
+}
+}
+----------------------------------------------------------------------------------------------------------------
+create a class student(rollno,name,address)
+create a class marks(phy,chem,bio,total)
+create a class fees(month,fees,status)
+display the details of the student.
+------------------------------------------------------------------------------
+Giving input at runtime
+Example-1
+-----------------
+import java.util.*;
+public class InheriteDemo 
+{
+int rollno,phy,chem,maths; //instance variable can be accessed through out the class.
+String name,address;
+void input()
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("enter rollno,name,address");
+	rollno=ob.nextInt();
+	name=ob.next();
+	address=ob.next();
+	System.out.println("enter physics,chemistry,maths");
+	phy=ob.nextInt();
+	chem=ob.nextInt();
+	maths=ob.nextInt();
+}
+void display()
+{
+	System.out.println("The rollno is :"+rollno);
+	System.out.println("The name is :"+name);
+	System.out.println("The address is :"+address);
+	System.out.println("Physics : "+phy+"Chemistry :"+chem+" maths :"+maths);
+	}
+}
+-------------------------------------------------------------------------------
+public class InheritanceChild extends InheriteDemo
+{
+int total,avg;
+String grade;
+void input()
+{
+super.input();
+total=phy+chem+maths;
+avg=total/3;
+}
+void display()
+{
+	super.display();
+	System.out.println("The total is :"+total);
+	System.out.println("The average is :"+avg);
+	if(avg>=70)
+			grade="First Division";
+	else if(avg>=60)
+		grade="Second Division";
+	else if(avg>=50)
+		grade="Third Division";
+	else
+		grade="Fail";
+	System.out.println("The grade ="+grade);
+}
+public static void main(String[] args) 
+{
+	InheritanceChild ob=new InheritanceChild();
+	ob.input();
+	ob.display();
+}
+}
+------------------------------------------------------------------------------------------------
+Abstract :- we can declare a class as abstract.method as abstract means methods without body.
+The abstract means incomplete class and method.
+we cannot create object of an abstract class.
+we have to inherite the abstract class into a child class and override the abstract method.
+
+An abstract class can contain abstract methods as well as concrete methods means method with body.
+we can create object of the child class which extends the abstract class.
+-------------------------------------------------------------------------------------------------------------
+example-1
+-------------------
+package org.abstractDemo;
+abstract class AbstractDemo1 
+{
+abstract void display();  //method without body
+abstract void display1(); //method without body
+void display2() //concrete method with body
+{
+	System.out.println("The method with body");
+}
+}
+public class AbstractDemo extends AbstractDemo1
+{
+
+	@Override
+	void display() 
+	{
+	System.out.println("this is display");
+	}
+
+	@Override
+	void display1() 
+	{
+		System.out.println("this is display1");
+	}
+	public static void main(String[] args) {
+		AbstractDemo ob=new AbstractDemo();
+		ob.display();
+		ob.display1();
+		ob.display2();
+	}
+}
+-----------------------------------------------------------------------------
+override :- what ever method we have in the parent class without body will be overriden in the child class and will have body is known as method override.
+----------------------------------------------------------------------------------
+example-2
+-------------------
+package org.abstractDemo;
+
+abstract class Abstractdemo3
+{
+	abstract int sum(int a,int b);
+	abstract float sum(float a,float b);
+}
+
+public class Abstractdemo4 extends Abstractdemo3 
+{
+
+	@Override
+	int sum(int a, int b) 
+	{
+			return a+b;
+	}
+
+	@Override
+	float sum(float a, float b) {
+			return a+b;
+	}
+	public static void main(String[] args) {
+		Abstractdemo4 ob=new Abstractdemo4();
+		System.out.println("The sum is "+ob.sum(5,6));
+		System.out.println("The sum is "+ob.sum(15.0f,6.0f));
+		System.out.println("The sum is "+ob.sum(51,61));
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------
+Interface :- it is similar to abstract class.In interface it only contains abstract methods.
+we cannot create object of the interface.we have to inherite the interface into a child class and create object of the child class.
+By interface we can perform multiple inheritance.
+An interface can inherite another interface.
+In interface the variables are final and has to be declared.
+--------------------------------------------------------------------------------------
+example:-
+package org.abstractDemo;
+interface student
+{
+	void student(int rollno,String name,String address);
+}
+
+interface marks
+{
+	int phy=56, chem=76, bio=64;  //interface the values are final and has to be assigned.
+	void marks();
+	}
+
+interface result extends marks //inheriting
+{
+	void result();
+	}
+
+
+public class InterfaceDemo implements student,result  //multiple inheritance
+{
+
+	@Override
+	public void marks() 
+	{
+	System.out.println("the physics marks is "+phy);
+	System.out.println("the chemistry marks is "+chem);
+	System.out.println("the Biology marks is "+bio);
+		}
+
+	@Override
+	public void result() 
+	{
+	int total=phy+chem+bio;
+		int avg=total/3;
+		System.out.println("The total is "+total);
+		System.out.println("The average is "+avg);
+	}
+
+	@Override
+	public void student(int rollno, String name, String address) 
+		{
+		System.out.println("the rollno is "+rollno);
+		System.out.println("The name is "+name);
+		System.out.println("The address is "+address);
+			}
+
+	public static void main(String[] args) 
+	{
+		InterfaceDemo ob=new InterfaceDemo();
+		ob.student(101, "sandip", "Bangalore");
+		ob.marks();
+		ob.result();
+	}
+}
+---------------------------------------------------------------------------------
+Final and static --monday
+--------------------------------
+ Final keyword:- we can declare the class as final,variable as final and we can have final method.
+If we declare the class as final we cannot inherite it.
+If we declare the variable as final we have to assign it and it cannot be changed.
+If we declare the method as final we cannot override it.
+---------------------------------------------------------------------------------------------------
+example-1
+------------------
+public final class FinalDemo 
+{
+final int x = 10;
+final void display()
+{
+	System.out.println("This is a final method");
+	System.out.println(x);
+}
+public static void main(String[] args) {
+	FinalDemo fd=new FinalDemo();
+	fd.display();
+}
+}
+----------------------------------------------------------------------------------------------
+static:- we can declare a variable as static .Method as static and we can have static block.
+we can access the variable,method and block without creating an object. 
+The static block execute before the main method.
+We can not access notstatic variables inside a static block.
+static variables once incremented remains incremented. 
+---------------------------------------------------------------------------------------------------------
+
+example-1
+-----------------
+
+public class StaticDemo 
+{
+static int a=10;
+static int b=20;
+static void display()
+{
+	System.out.println("This is a static method");
+}
+static
+{
+	System.out.println("This is a static block");
+}
+public static void main(String[] args) {
+	System.out.println("The sum of a and b is "+(a+b));
+	display();
+	}
+}
+-------------------------------------------------------------------------------------------
+example-2
+-------------------
+
+public class StaticDemo2 
+{
+ static int a=10;
+ static void display()
+{
+	System.out.println("This value of a is :"+a);
+	a++;
+}
+public static void main(String[] args) {
+		display();
+		display();
+		display();
+		display();
+	}
+}
+-------------------------------------------------------------------------
+Exception Handling
+--------------------------------------
+This is used to handle the error.
+There are 3 types of error 
+1)syntax error (spelling mistake,missing of semi-colon)
+2)logical error(wrong formule etc)
+3)runtime error
+We are going to handle runtime error.The syntax and logical error has to be handled manually.
+There are 5 keyword :- try,catch,finally,throws,throw.
+--------------------------------------------------------------------------------------------------------
+The main purpose of exception handling is to handle the error and allow the program to excecute till the end .
+They are divided into 2 groups
+1)checked Exception:- SQLException,InterruptedException,IOException....
+2)unchecked Exception:-ArithmeticException,ArrayIndexOutOfBoundException,NumberFormatException....
+
+----------------------------------------------------------------------------------------------------------
+example-1(with handling the error)
+----------------------
+package org.exception;
+import java.util.*;
+public class FirstEx 
+{
+public static void main(String[] args)
+{
+Scanner ob=new Scanner(System.in);
+System.out.println("Enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=a/b;
+System.out.println("the Result is :"+c);
+System.out.println("End of program");
+}
+}
+--------------------------------------------------------------------------------------
+example-2(handle the error so that it will execute till the end)
+-------------------------------------------------------------------------------------
+package org.exception;
+import java.util.*;
+public class FirstEx 
+{
+public static void main(String[] args)
+{
+	try
+	{
+Scanner ob=new Scanner(System.in);
+System.out.println("Enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=a/b;
+System.out.println("the Result is :"+c);
+	}
+	catch(Exception ae)
+	{
+		System.out.println("The error is :"+ae);
+	}
+System.out.println("End of program");
+}
+}
+--------------------------------------------------------------------------------------------
+* The main purpose is to flow till the end of the program
+--------------------------------------------------------------------------------------------
+Example-3(try---finally)
+----------------------------------------
+package org.exception;
+import java.util.*;
+public class FirstEx2 
+{
+public static void main(String[] args)
+{
+	try
+	{
+Scanner ob=new Scanner(System.in);
+System.out.println("Enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=a/b;
+System.out.println("the Result is :"+c);
+	}
+	finally
+	{
+System.out.println("End of program");
+}
+}
+}
+-------------------------------------------------------------------
+Example-4(try--catch--finally)
+-------------------------------------------------------
+package org.exception;
+import java.util.*;
+public class FirstEx3 
+{
+public static void main(String[] args)
+{
+	try
+	{
+Scanner ob=new Scanner(System.in);
+System.out.println("Enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=a/b;
+System.out.println("the Result is :"+c);
+	}
+	catch(Exception ae)
+	{
+		System.out.println("The error is "+ae);
+	}
+	finally
+	{
+System.out.println("End of program");
+}
+}
+}
+------------------------------------------------------------------------------------------------------------
+example-5(try with multiple catch)
+----------------------------
+package org.exception;
+import java.util.*;
+public class FirstEx4 
+{
+public static void main(String[] args)
+{
+	try
+	{
+Scanner ob=new Scanner(System.in);
+System.out.println("Enter 2 nos");
+int a=ob.nextInt();
+int b=ob.nextInt();
+int c=a/b;
+System.out.println("the Result is :"+c);
+	}
+	catch(ArithmeticException ae)
+	{
+		System.out.println("The error is "+ae);
+	}
+	catch(Exception ae)
+	{
+		System.out.println("The errorr is "+ae);
+	}
+	finally
+	{
+System.out.println("End of program");
+}}}
+------------------------------------------------------------------------------------
+Example-6(ArrayIndexOutOfBound Exception)
+------------------------------------------------------------------------------------------
+package org.exception;
+import java.util.*;
+public class FirstEx5 
+{
+public static void main(String[] args)
+{
+	try
+	{
+Scanner ob=new Scanner(System.in);
+---------------------------------------------------To Enter the array----
+System.out.println("Enter 5 nos");
+int a[]=new int[5];
+for(int i=0;i<5;i++)
+{
+	a[i]=ob.nextInt();
+}
+-------------------------------------------To Display the array-----
+System.out.println("5 nos are");
+for(int i=0;i<=5;i++)
+{
+System.out.println(a[i]);
+}
+-----------------------------------------------------------------------------
+	}
+	catch(ArithmeticException ae)
+	{
+		System.out.println("The error is "+ae);
+	}
+	catch(Exception ae)
+	{
+		System.out.println("The errorr is "+ae);
+	}
+	finally
+	{
+System.out.println("End of program");
+}}}
+-------------------------------------------------------------------------------
+for loop
+---------------------------------------------
+for(int i=0;i<=5;i++)
+
+int i=0 <--------------starting point
+i<5(0 to 4) <-------end point
+i<=5(0 to 5)-----------end point
+i++ (i+1) <-------------increment
+----------------------------------------------------------------------------------
+*suppose you have entered 5 nos and trying to display 6 nos.
+Then the arrayIndexOutOfBound Exception will occur.
+-----------------------------------------------------------------------------------
+Throws Exception
+----------------------------------------
+This is mainly used to handle checked Exception.It is used with method.it doesnot have body.
+Example-7
+-------------------------
+package org.exception;
+public class FirstEx6 
+{
+public static void main(String[] args) throws Exception
+{
+	for(int i=1;i<=10;i++)
+	{
+		System.out.println(i);
+		Thread.sleep(1000);
+	}
+}
+}
+----------------------------------------------------------------------
+throw Exception:-This is used for user defined exception.
+example:- marks should be greater than zero.
+salary should be greater than 20k.
+age to vote should be greater than or equal to 18 years.
+------------------------------------------------------------------------------------------
+Example-8
+---------------------
+package org.exception;
+import java.util.*;
+public class FirstEx6 
+{
+public static void main(String[] args) throws Exception
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("Enter your age");
+	int age=ob.nextInt();
+	if(age>=18)
+		System.out.println("eligible to vote");
+	else
+		throw new Exception("The age should be greater than or equal to 18 to vote ");
+}
+}
+----------------------------------------------------------------------------
+MultiThreading
+-----------------------------------
+Thread is a flow of data from the main() till the end .Till now we have done single threaded program.
+The flow start from the main method and ends.
+In multi-Threaded program we will have multiple task running at the same time.
+The threads will run concurrently.
+we have run() which will be called by the start().
+we have to inherite the Thread class or implement runnable interface.
+---------------------------------------------------------------------------------------------------
+example-1
+------------------
+package org.Thread;
+public class Example1 extends Thread
+{
+public void run()
+{
+	try
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i);
+			sleep(1000);
+		}
+	}
+	catch(Exception ae)
+	{
+		ae.printStackTrace();
+	}
+}
+}
+---------------------------------------
+package org.Thread;
+public class Example2 extends Thread
+{
+public void run()
+{
+	try
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i);
+			sleep(1000);
+		}
+	}
+	catch(Exception ae)
+	{
+		ae.printStackTrace();
+	}
+}
+}
+--------------------------------------------------------
+package org.Thread;
+public class Example3 extends Thread
+{
+public void run()
+{
+	try
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i);
+			sleep(1000);
+		}
+	}
+	catch(Exception ae)
+	{
+		ae.printStackTrace();
+	}
+}
+public static void main(String[] args) 
+{
+Example1 ob1=new Example1();
+Example2 ob2=new Example2();
+Example3 ob3=new Example3();
+ob1.start();
+ob2.start();
+ob3.start();
+}
+}
+--------------------------------------------------------------------------------------------
+example-2
+-------------------
+package org.Thread;
+public class Example3 extends Thread
+{
+public void run()
+{
+	try
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i+getName());
+			sleep(1000);
+		}
+	}
+	catch(Exception ae)
+	{
+		ae.printStackTrace();
+	}
+}
+public static void main(String[] args) 
+{
+Example3 ob1=new Example3();
+Example3 ob2=new Example3();
+Example3 ob3=new Example3();
+ob1.start();
+ob2.start();
+ob3.start();
+}
+}
+------------------------------------------------------------------------
+Thread :-
+--------
+The thread is a sort of execution of instruction.
+In a program it start from public static void main(String arg[])
+Statement start executing one after the other.
+
+MultiThread :-
+-------------------
+In an application that is able to manage and co-ordinate multiple tasks simultaneously is called concurrent, multithread application.
+Multithreaded applications make use of thread switching and scheduling that allow 
+multiple threads to make use of system resources.
+To create a multithread application we have to implement runnable interface or extends Thread class.
+In runnable interface we have one abstract method ->run()
+In Thread class we have different methods.
+------------------------------------------------------
+laptop :- word,excel,oracle,songs(4 applications are open).we have a single processer.the processer will give fraction of second to each application and there will be thread switching.It is so fast that we cannot come to know.
+------------------------------------
+Life cycle of Thread :-
+-------------------------
+new born thread,
+start,
+runnable(choose of thread),
+running,
+block/wait/sleep,
+dead
+------------------------------------------------
+methods of Thread:-
+-------------------------------------------------
+1)getName():-Obtain the thread name.
+
+2)isAlive():- check if a thread is still running.
+
+3)run() :-Entry point for the thread.
+
+4)start():-Start a thread by calling the run method.
+
+5)yield():-this method pauses the currently executing thread temporarily for giving chance to the remaining waiting threads of same or high priority to execute. if there is no waiting thread or all the waiting thread have a lower
+priority then the same thread will continue its execution.
+
+6)join():-The join() method of thread class waits for a thread to die. It is used when you want one thread to wait for completion of another. This process is like a relay race where the second runner waits until the first runner comes and hand over the flag to him.
+
+7)sleep():-Based on our requirement we can make a thread to be in sleeping state 
+for a specified period of time.
+
+8)setPriority():-To change the priority of the thread.
+
+9)getPriority() :-To get the thread priority.
+MIN_PRIORITY=1 to 4
+NORM_PRIORITY=5
+MAX_PRIORITY=6 to 10
+
+10)Daemon Thread() :-It is a low priority thread which run in the background doing the garbage collection operation .
+
+11)wait() :-Thread will go to wait until some other thread doesnot notify.
+
+12)notify() :- Wakes up a thread that called wait() on some thread. 
+
+13)notifyAll() :-wakes up all the thread that called wait()on some object.
+
+14)The suspend() method of thread class puts the thread from running to waiting state. This method is used if you want to stop the thread execution and start it again when a certain event occurs. This method allows a thread to temporarily cease execution. The suspended thread can be resumed using the resume() method.
+
+15)The holdLock() method of thread class returns true if the current thread holds the monitor lock on the specified object.
+
+16)Java Thread interrupt() method
+The interrupt() method of thread class is used to interrupt the thread. If any thread is in sleeping or waiting state (i.e. sleep() or wait() is invoked) then using the interrupt() method, we can interrupt the thread execution by throwing InterruptedException.
+
+If the thread is not in the sleeping or waiting state then calling the interrupt() method performs a normal behavior and doesn't interrupt the thread but sets the interrupt flag to true.
+
+Synchronization:-
+--------------------
+When two or more threads need access to a shared resource,  need some way to 
+ensure that the resource will be used by only one thread at a time. The process by 
+which it is achieved is called synchronization.
+
+DeadLock:-
+-------------
+When two threads are waiting each other and cannot procced the program is said to 
+be deadlock.
+------------------------------------------------------------------------------------------------------
+Example-1
+-----------------
+Flow of Program :-
+1)we created 3 classes Thread1,Thread2,Thread3 each having run().
+2)start() method will call the run().
+3)we created objects of each class. 
+Thead1 obj=new Thead1();
+Thead2 obj1=new Thead2();
+Thead3 obj2=new Thead3();
+4)we called the run methods of each class by using start method.
+obj.start();
+obj1.start();   
+obj2.start();
+5)all the run methods start exceuting concurrently
+6)to see that which thread is excuting we use a method
+Thread.currentThread().getName() 
+7)JVM will allocate the first thread as Thread-0
+----------------------------------------------------------------------------
+
+package org.iiht.com;
+class Thead1 extends Thread 
+{
+public void run()
+{
+	for(int i=1;i<=10;i++)
+	{
+		System.out.println(i);
+		try {
+			sleep(1000);
+		} catch (InterruptedException e) 
+		{
+		e.printStackTrace();
+		}
+	}
+}
+}
+class Thead2 extends Thread 
+{
+public void run()
+{
+	for(int i=1;i<=10;i++)
+	{
+		System.out.println(i);
+		try {
+			sleep(1000);
+		} catch (InterruptedException e) {
+		e.printStackTrace();
+		}
+	}
+}}
+class Thead3 extends Thread 
+{
+public void run()
+{
+	for(int i=1;i<=10;i++)
+	{
+		System.out.println(i);
+		try {
+			sleep(1000);
+		} catch (InterruptedException e) {
+		e.printStackTrace();
+		}
+	}
+	}}
+public class Theadprg1
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(obj.isAlive());//before start --false
+		Thead1 obj=new Thead1();
+		Thead2 obj1=new Thead2();
+		Thead3 obj2=new Thead3();
+	obj.start();
+	obj1.start();   //all the run methods start exceuting concurrently
+	obj2.start();
+	System.out.println(obj.isAlive());		//after start---true	
+}
+}
+
+
+-----------------------------------------------------------
+Example-2
+-------------------
+package org.iiht.com;
+class Theadprg1 extends Thread 
+{
+public void run()
+{
+	for(int i=1;i<=10;i++)
+	{
+		System.out.println(i);
+		try {
+			sleep(1000);
+		} catch (InterruptedException e) {
+						e.printStackTrace();
+		}
+	}
+}
+	public static void main(String[] args) 
+	{
+		Theadprg1 obj=new Theadprg1();
+		Theadprg1 obj1=new Theadprg1();
+		Theadprg1 obj2=new Theadprg1();
+		System.out.println(obj.isAlive());
+	obj.start();
+	obj1.start();
+	obj2.start();
+	System.out.println(obj.isAlive());
+			}
+}
+-------------------------------------------------------------------------------------------
+Example-3
+------------------
+package org.iiht.com;
+public class JavaYieldExp extends Thread  
+{  
+    public void run()  
+    {  
+        for (int i=0; i<3 ; i++)  
+            System.out.println(Thread.currentThread().getName() + " in control");  
+    }  
+    public static void main(String[]args)  
+    {  
+        JavaYieldExp t1 = new JavaYieldExp();  
+        JavaYieldExp t2 = new JavaYieldExp();  
+        t1.start();  
+        t2.setPriority(10);
+        t2.start();  
+        System.out.println(t1.getPriority());
+        System.out.println(t2.getPriority());
+             for (int i=0; i<3; i++)  
+        {  
+                        t1.yield();  
+            System.out.println(Thread.currentThread().getName() + " in control");  
+        }  
+    }  
+}  
+-------------------------------------------------------------------------------------------------
+Example-4
+-----------------------
+public class JoinExample1 extends Thread  
+{    
+    public void run()  
+    {    
+        for(int i=1; i<=4; i++)  
+        {    
+            try  
+            {    
+                Thread.sleep(500);    
+            }catch(Exception e){System.out.println(e);}    
+            System.out.println(i);    
+        }    
+    }    
+    public static void main(String args[])  
+    {   
+        // creating three threads  
+        JoinExample1 t1 = new JoinExample1();    
+        JoinExample1 t2 = new JoinExample1();    
+        JoinExample1 t3 = new JoinExample1();    
+        // thread t1 starts  
+        t1.start();   
+        // starts second thread when first thread t1 is died.  
+        try  
+        {    
+            t1.join();    
+        }catch(Exception e){System.out.println(e);}    
+        // start t2 and t3 thread   
+        t2.start();   
+        t3.start();    
+    }    
+}  
+-------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+Example-6
+--------------------
+public class JavaSuspendExp extends Thread
+ {
+	public void run() {
+		for (int i = 1; i < 5; i++) {
+			try {
+				// thread to sleep for 500 milliseconds
+				sleep(500);
+				System.out.println(Thread.currentThread().getName());
+			} catch (InterruptedException e) {
+				System.out.println(e);
+			}
+			System.out.println(i);
+		}
+	}
+
+	public static void main(String args[]) {
+		// creating three threads
+		JavaSuspendExp t1 = new JavaSuspendExp();
+		JavaSuspendExp t2 = new JavaSuspendExp();
+		JavaSuspendExp t3 = new JavaSuspendExp();
+		// call run() method
+		t1.start();
+		t2.start();
+		// suspend t2 thread
+		t2.suspend();
+		t2.resume();
+		// call run() method
+		t3.start();
+	}
+}
+----------------------------------------------------------------------------
+Example-7
+------------------
+package org.iiht.com;
+class Second implements Runnable
+{
+	synchronized public void run()
+	{
+		try
+		{
+			Thread t=Thread.currentThread();
+			String name=t.getName();
+			for(int i=0;i<10;i++)
+			{
+				System.out.println(name+"="+i);
+				Thread.sleep(500);
+				if(name.equals("raj") && (i==4))
+				{
+					wait();
+				}
+				if(name.equals("geeta") && (i==4))
+				{
+					wait();
+				}
+				if(name.equals("seeta") && (i==6))
+				{
+					System.out.println("raj and geeta thread wakes up...");
+					notifyAll();
+
+				}
+				if(name.equals("raj") && (i==9))
+				{
+					notify();
+				}	}
+		}catch(Exception e){}
+	}
+	public static void main(String args[]) throws Exception
+	{ 
+		Second obj=new Second();
+		Thread t1=new Thread(obj,"raj");
+		Thread t2=new Thread(obj,"seeta");
+		Thread t3=new Thread(obj,"geeta");
+		t1.start();
+		t2.start();
+		t3.start();
+	}}
+--------------------------------------------------------------
+example-8
+---------------
+package org.Thread;
+class Second implements Runnable
+{
+	synchronized public void run()
+	{
+		try
+		{
+			Thread t=Thread.currentThread();
+			String name=t.getName();
+			for(int i=0;i<10;i++)
+			{
+				System.out.println(name+"="+i);
+				Thread.sleep(500);
+				if(name.equals("totendra") && (i==4))
+				{
+					wait();
+				}
+				if(name.equals("rakshita") && (i==4))
+				{
+					wait();
+				}
+				if(name.equals("swarna") && (i==6))
+				{
+					System.out.println("totendra and rakshita thread wakes up...");
+					notifyAll();
+
+				}
+				if(name.equals("totendra") && (i==9))
+				{
+					notify();
+				}	}
+		}catch(Exception e){}
+	}
+	public static void main(String args[]) throws Exception
+	{ 
+		Second obj=new Second();
+		Thread t1=new Thread(obj,"totendra");
+		Thread t2=new Thread(obj,"swarna");
+		Thread t3=new Thread(obj,"rakshita");
+		t1.start();
+		t2.start();
+		t3.start();
+	}}
+---------------------------------------------------------------------------------------
+
+wap to create three threads totendra,swarna,rakshita and execute in the same order.
+first totendra should execute, then swarna and then rakshita.
+----------------------------------------------------------------------------------------------------------------------------
+html,css,java-script,bootstrap,angular10
+core-java,jdbc,jsp,servlet,Hibernate,oracle10
+project
+spring,springboot,jpa,angular10--------------fullstack
+-------------------------------------------------------------------------------
+Java Database Connectivity
+----------------------------------------------------------------------------------------------------------------------
+Java (byte code)------<--->-------Driver(Interpreter)------<------>------Oracle/Mysql(ASCII code)
+-------------------------------------------------------------------------------------------------------------------------
+step to connect java to the database
+-------------------------------------------------
+1)load the driver------present in the oracle
+2)create connection.
+3)statement
+4)execute()
+--------------------------------------------------------------------------
+we have some library files required---ojdbc14.jar
+It contains JDBC API.
+---------------------------------------------------------------------------
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar
+---------------------------------------------------------------------------------------
+example-1(create table)
+------------------------------------
+package org.jdbctest;
+import java.sql.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //loading the oracle driver 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	Statement st =con.createStatement();
+	st.execute("create table beparctice(empno number,name varchar2(30),email varchar2(30))");
+	System.out.println("table created");
+}
+}
+
+---------------------------------------------------------
+example-2(inserting data)
+----------------------------------------------
+package org.jdbctest;
+import java.sql.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //loading the oracle driver 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	Statement st =con.createStatement();
+	st.execute("insert into beparctice values(102,'rakshita','rakshita@gmail.com')");
+	System.out.println("row inserted");
+}
+}
+-----------------------------------------------------------------------------------
+example-3(update data)
+------------------------------------------------
+package org.jdbctest;
+import java.sql.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //loading the oracle driver 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	Statement st =con.createStatement();
+	st.execute("update beparctice set email='rakshita123@gmail.com' where empno=102");
+	System.out.println("row updated");
+}
+}
+-----------------------------------------------------------
+example-4(delete data)
+----------------------------------------
+package org.jdbctest;
+import java.sql.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //loading the oracle driver 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	Statement st =con.createStatement();
+	st.execute("delete from beparctice where empno=102");
+	System.out.println("row deleted");
+}
+}
+------------------------------------------------------------------------------------------------
+Dynamic insert/update/delete/select
+-----------------------------------------------------------------
+example-5
+--------------------------
+package org.jdbctest;
+import java.sql.*;
+import java.util.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("enter empno,name and email");
+	int empno=ob.nextInt();
+	String name=ob.next();
+	String email=ob.next();
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //loading the oracle driver 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	PreparedStatement st =con.prepareStatement("insert into beparctice values(?,?,?)");
+	st.setInt(1, empno);
+	st.setString(2, name);
+	st.setString(3,email);
+	st.execute();
+	System.out.println("row inserted");
+}
+}
+-----------------------------------------------------------------------------------------------
+example-6(update the email whose empno you give)
+-----------------
+package org.jdbctest;
+import java.sql.*;
+import java.util.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("enter email and empno you want to update");
+	String email=ob.next();
+	int empno=ob.nextInt();
+	Class.forName("oracle.jdbc.driver.OracleDriver"); //loading the oracle driver 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	PreparedStatement st =con.prepareStatement("update beparctice set email=? where empno=?");
+	st.setString(1,email);
+	st.setInt(2, empno);
+	st.execute();
+	System.out.println("row updated");
+}
+}
+--------------------------------------------------------------------------
+example-7
+-----------------
+package org.jdbctest;
+import java.sql.*;
+import java.util.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Scanner ob=new Scanner(System.in);
+	System.out.println("enter empno you want to delete");
+	int empno=ob.nextInt();
+	Class.forName("oracle.jdbc.driver.OracleDriver"); 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	PreparedStatement st =con.prepareStatement("delete from beparctice where empno=?");
+	st.setInt(1, empno);
+	st.execute();
+	System.out.println("row deleted");
+}
+}
+-----------------------------------------------------------------------------------------
+selecting the data :-
+---------------------------
+ResultSet rs ---This will store the whole table a pointer will be created which will go to the next record.we have to use while loop.
+while(rs.next())
+{
+print(rs.getInt(1)+"  "+rs.getString(2)+" "+rs.getString(3));
+}
+------------------------------------------------------------------------
+example-8
+------------------
+package org.jdbctest;
+import java.sql.*;
+public class JdbcExample1 
+{
+public static void main(String[] args)throws Exception 
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver"); 
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "system", "1234");
+	PreparedStatement st =con.prepareStatement("select * from beparctice");
+	ResultSet rs=st.executeQuery();
+	while(rs.next())
+	{
+	System.out.println(rs.getInt(1)+"  "+rs.getString(2)+" "+rs.getString(3));
+	}
+}
+}
+---------------------------------------------------------
+create table :-
+1)create table beparctice(empno number,name varchar2(30),email varchar2(30));
+
+inserting data:-
+2)insert into beparctice values(102,'rakshita','rakshita@gmail.com');
+
+select the data of the table:-
+3)select * from beparctice;
+
+update data of the table:-
+4)update beparctice set email='rakshita123@gmail.com' where empno=102;
+
+delete data:-
+5)delete from beparctice where empno=101;
+----------------------------------------------------------------------------------------------------
+create a bank table (accno,name,balace)
+insert data,update data,delete data,select data.
+use case and switch
+----------------------------------------------------------------------------
+Dynamic insert, update, delete,select of data.(java server pages)
+
+
+step 1:- download the tomcat
+https://tomcat.apache.org/download-90.cgi
+
+example-1
+------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Student DataBase</center></h1><hr>
+<form action=second.jsp>
+<table>
+<tr><td>Enter rollno<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter name<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter address<td><input type=text name=t3 size=20></tr>
+<tr><td><td>
+<input type=submit name=b1 value=insert>
+<input type=submit name=b1 value=update>
+<input type=submit name=b1 value=delete>
+<input type=submit name=b1 value=select>
+</tr>
+</table></form>
+</body></html>
+----------------------------------------------------------------
+<%String a =request.getParameter("t1");
+String b =request.getParameter("t2");
+String c =request.getParameter("t3");%>
+
+<% out.println("The rollno is "+a);
+out.println("<br>");
+ out.println("The name is "+b);
+ out.println("<br>");
+  out.println("The address is "+c);%>
+----------------------------------------------------------------------------
+example-2
+------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Calculator Example</center></h1><hr>
+<form action=second.jsp>
+<table>
+<tr><td>Enter a number<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter a number<td><input type=text name=t2 size=20></tr>
+<tr><td><td>
+<input type=submit name=b1 value=sum>
+<input type=submit name=b1 value=sub>
+<input type=submit name=b1 value=mul>
+<input type=submit name=b1 value=div>
+</tr>
+</table></form>
+</body></html>
+------------------------------------------------
+<%String a =request.getParameter("t1");
+String b =request.getParameter("t2");
+String but =request.getParameter("b1");%>
+
+<%if(but.equals("sum"))
+{
+int result=Integer.parseInt(a)+Integer.parseInt(b);
+out.println("The result is "+result);
+}
+else if(but.equals("sub"))
+{
+int result=Integer.parseInt(a)-Integer.parseInt(b);
+out.println("The result is "+result);
+}
+else if(but.equals("mul"))
+{
+int result=Integer.parseInt(a)*Integer.parseInt(b);
+out.println("The result is "+result);
+}
+else if(but.equals("div"))
+{
+int result=Integer.parseInt(a)/Integer.parseInt(b);
+out.println("The result is "+result);
+}
+else
+{
+	out.println("Invalid Input");
+}
+%>
+--------------------------------------------------------------------
+example-3
+--------------
+create table beparcticaljsp(rollno number,name varchar2(30),address varchar2(30));
+---------------------------------------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Student DataBase</center></h1><hr>
+<form action="second.jsp">
+<table>
+<tr><td>Enter rollno<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter name<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter address<td><input type=text name=t3 size=20></tr>
+<tr><td><td>
+<input type=submit name=b1 value=insert>
+<input type=submit name=b1 value=update>
+<input type=submit name=b1 value=delete>
+<input type=submit name=b1 value=select>
+</tr>
+</table></form>
+</body></html>
+-----------------------------------------------------------
+<%@page import="java.sql.*"%>
+<%String a =request.getParameter("t1");
+String b =request.getParameter("t2");
+String c =request.getParameter("t3");
+String but =request.getParameter("b1");%>
+
+<%
+try
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+	if(but.equals("insert"))
+	{
+		PreparedStatement ps=con.prepareStatement("insert into beparcticaljsp values(?,?,?)");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.setString(2,b);
+		ps.setString(3,c);
+		ps.execute();
+		out.println("row inserted");
+	}
+	else if(but.equals("update"))
+	{
+		out.println("row updated");
+	}
+	else if(but.equals("delete"))
+	{
+		out.println("row delete");
+	}
+	else if(but.equals("select"))
+	{
+		out.println("row select");
+	}
+	else
+	{
+		out.println("invalid input");
+	}
+
+}
+catch(Exception ae)
+{
+	ae.printStackTrace();
+}
+
+%>
+
+-------------------------------------------------------
+<%@page import="java.sql.*"%>
+<%String a =request.getParameter("t1");
+String b =request.getParameter("t2");
+String c =request.getParameter("t3");
+String but =request.getParameter("b1");%>
+
+<%
+try
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+	if(but.equals("insert"))
+	{
+		PreparedStatement ps=con.prepareStatement("insert into beparcticaljsp values(?,?,?)");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.setString(2,b);
+		ps.setString(3,c);
+		ps.execute();
+		out.println("row inserted");
+	}
+	else if(but.equals("update"))
+	{
+		PreparedStatement ps=con.prepareStatement("update beparcticaljsp set address=? where rollno=?");
+		ps.setString(1,c);
+		ps.setInt(2,Integer.parseInt(a));
+		ps.execute();
+		out.println("row updated");
+	}
+	else if(but.equals("delete"))
+	{
+		PreparedStatement ps=con.prepareStatement("delete from beparcticaljsp where rollno=?");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.execute();
+		out.println("row delete");
+	}
+	else if(but.equals("select"))
+	{
+		out.println("row select");
+	}
+	else
+	{
+		out.println("invalid input");
+	}
+
+}
+catch(Exception ae)
+{
+	ae.printStackTrace();
+}
+
+%>
+
+-----------------------------------------------------------------------------------------
+select * from beparcticaljsp;
+-----------------------------------------
+For select we have to use ResultSet.which stores the whole table.
+we have to use while loop and put the pointer next and get the next row.
+--------------------------------------------------------------------------------------------
+ResultSet rs=con.executeQuery();
+while(rs.next())
+{
+}
+------------------------------------------------------------
+
+<%@page import="java.sql.*"%>
+<%String a =request.getParameter("t1");
+String b =request.getParameter("t2");
+String c =request.getParameter("t3");
+String but =request.getParameter("b1");%>
+
+<%
+try
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+	if(but.equals("insert"))
+	{
+		PreparedStatement ps=con.prepareStatement("insert into beparcticaljsp values(?,?,?)");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.setString(2,b);
+		ps.setString(3,c);
+		ps.execute();
+		out.println("row inserted");
+	}
+	else if(but.equals("update"))
+	{
+		PreparedStatement ps=con.prepareStatement("update beparcticaljsp set address=? where rollno=?");
+		ps.setString(1,c);
+		ps.setInt(2,Integer.parseInt(a));
+		ps.execute();
+		out.println("row updated");
+	}
+	else if(but.equals("delete"))
+	{
+		PreparedStatement ps=con.prepareStatement("delete from beparcticaljsp where rollno=?");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.execute();
+		out.println("row delete");
+	}
+	else if(but.equals("select"))
+	{
+		PreparedStatement ps=con.prepareStatement("select * from beparcticaljsp");
+		ResultSet rs=ps.executeQuery();
+		while(rs.next())
+		{
+			out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+		}
+	}
+	else
+	{
+		out.println("invalid input");
+	}
+
+}
+catch(Exception ae)
+{
+	ae.printStackTrace();
+}
+
+%>
+------------------------------------------------------------------------------------
+
+Final JSP
+-------------------
+<%@page import="java.sql.*"%>
+<%String a =request.getParameter("t1");
+String b =request.getParameter("t2");
+String c =request.getParameter("t3");
+String but =request.getParameter("b1");%>
+
+<%
+try
+{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+	if(but.equals("insert"))
+	{
+		PreparedStatement ps=con.prepareStatement("insert into beparcticaljsp values(?,?,?)");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.setString(2,b);
+		ps.setString(3,c);
+		ps.execute();
+		out.println("row inserted");
+	}
+	else if(but.equals("update"))
+	{
+		PreparedStatement ps=con.prepareStatement("update beparcticaljsp set address=? where rollno=?");
+		ps.setString(1,c);
+		ps.setInt(2,Integer.parseInt(a));
+		ps.execute();
+		out.println("row updated");
+	}
+	else if(but.equals("delete"))
+	{
+		PreparedStatement ps=con.prepareStatement("delete from beparcticaljsp where rollno=?");
+		ps.setInt(1,Integer.parseInt(a));
+		ps.execute();
+		out.println("row delete");
+	}
+	else if(but.equals("select"))
+	{
+		PreparedStatement ps=con.prepareStatement("select * from beparcticaljsp");
+		ResultSet rs=ps.executeQuery();
+		out.println("<h1><center>Student DataBase</center></h1><hr color=red>");
+		out.println("<table border=1 width=50% >");
+		out.println("<tr><th>Rollno<th>Name<th>Address</tr>");
+		while(rs.next())
+		{
+			out.println("<tr><td>"+rs.getInt(1)+" <td> "+rs.getString(2)+"  <td>"+rs.getString(3)+"</tr>");
+		}
+		out.println("<table>");
+	}
+	else
+	{
+		out.println("invalid input");
+	}
+
+}
+catch(Exception ae)
+{
+	ae.printStackTrace();
+}
+
+%>
+
+-------------------------------------------------------------------------------------------------
+servlet:-
+There are 2 types of servlet
+1)generic servlet:- It can respond to any type of protocal.
+2)HTTP servlet:- It can respond to http protocals.
+--------------------------------------
+request comes from client (html><----->server (accept the request and process it then send the reponse) 
+-----------------------------------------------
+example-1
+-----------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Student DataBase</center></h1><hr>
+<form action="second" method=get>
+<table>
+<tr><td>Enter rollno<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter name<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter address<td><input type=text name=t3 size=20></tr>
+<tr><td><td>
+<input type=submit name=b1 value=insert>
+<input type=submit name=b1 value=update>
+<input type=submit name=b1 value=delete>
+<input type=submit name=b1 value=select>
+</tr>
+</table></form>
+</body></html>
+-----------------------------------------------
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+@WebServlet("/second")
+public class second extends GenericServlet 
+{
+public void init()
+{
+	System.out.println("this is init");
+}
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException
+{
+		PrintWriter pw=res.getWriter();
+		res.setContentType("text/html");
+		String a=req.getParameter("t1");
+		String b=req.getParameter("t2");
+		String c=req.getParameter("t3");
+		pw.println("the rollno is "+a);
+		pw.println("the name is "+b);
+		pw.println("the address is "+c);
+			}
+	
+	public void destroy()
+	{
+		System.out.println("this is destroy");
+	}
+	
+}
+------------------------------------------------------------------------
+what is the lifecycle method of GenericServlet
+
+public void int()---memory blocks are initialized.It will work for one time when you start the program.
+
+public void service()----It will take the request and give the response.
+
+public void destroy()----It will delete the memory blocks which was created by init().
+---------------------------------------------------------------------------------------------------------------------
+what is the lifecycle method of  HttpServlet
+
+public void int()---memory blocks are initialized.It will work for one time when you start the program.
+
+public void service/doGet/doPost()----It will take the request and give the response.
+
+public void destroy()----It will delete the memory blocks which was created by init().
+---------------------------------------------------------------------------------------------------------------------
+doGet() :- The data will be displayed on the URL.It is not secured.
+doPost():- The data will not be displayed on the URL.It is secured.
+
+<form action="second" method=get/post>
+--------------------------------------------------------------------------------------------
+
+example-2
+---------------------
+<html>
+<body bgcolor=cyan>
+<h1><center>Student DataBase</center></h1><hr>
+<form action="second">
+<table>
+<tr><td>Enter rollno<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter name<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter address<td><input type=text name=t3 size=20></tr>
+<tr><td><td>
+<input type=submit name=b1 value=insert>
+<input type=submit name=b1 value=update>
+<input type=submit name=b1 value=delete>
+<input type=submit name=b1 value=select>
+</tr>
+</table></form>
+</body></html>
+------------------------------------------------------------
+import java.io.*;
+import javax.servlet.*;
+import java.sql.*;
+import javax.servlet.annotation.WebServlet;
+@WebServlet("/second")
+public class second extends GenericServlet 
+{
+public void init()
+{
+	System.out.println("this is init");
+}
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException
+{
+		PrintWriter pw=res.getWriter();
+		res.setContentType("text/html");
+		String a=req.getParameter("t1");
+		String b=req.getParameter("t2");
+		String c=req.getParameter("t3");
+		String but=req.getParameter("b1");
+		try
+		{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
+			if(but.equals("insert"))
+			{
+				PreparedStatement ps=con.prepareStatement("insert into beparcticaljsp values(?,?,?)");
+				ps.setInt(1,Integer.parseInt(a));
+				ps.setString(2,b);
+				ps.setString(3,c);
+				ps.execute();
+				pw.println("row inserted");
+			}
+			else if(but.equals("update"))
+			{
+				PreparedStatement ps=con.prepareStatement("update beparcticaljsp set address=? where rollno=?");
+				ps.setString(1,c);
+				ps.setInt(2,Integer.parseInt(a));
+				ps.execute();
+				pw.println("row updated");
+			}
+			else if(but.equals("delete"))
+			{
+				PreparedStatement ps=con.prepareStatement("delete from beparcticaljsp where rollno=?");
+				ps.setInt(1,Integer.parseInt(a));
+				ps.execute();
+				pw.println("row delete");
+			}
+			else if(but.equals("select"))
+			{
+				PreparedStatement ps=con.prepareStatement("select * from beparcticaljsp");
+				ResultSet rs=ps.executeQuery();
+				pw.println("<h1><center>Student DataBase</center></h1><hr color=red>");
+				pw.println("<table border=1 width=50% >");
+				pw.println("<tr><th>Rollno<th>Name<th>Address</tr>");
+				while(rs.next())
+				{
+					pw.println("<tr><td>"+rs.getInt(1)+" <td> "+rs.getString(2)+"  <td>"+rs.getString(3)+"</tr>");
+				}
+			pw.println("<table>");
+			}
+			else
+			{
+				pw.println("invalid input");
+			}
+		}
+			catch(Exception ae)
+			{
+				ae.printStackTrace();
+			}
+}
+		public void destroy()
+	{
+		System.out.println("this is destroy");
+	}}
+---------------------------------------------------------------------------------------------------------------
+
+add the jar file:- servletapi.jar ----comcat ---lib
+
+ojdbc14.jar paste in web-inf----lib
+--------------------------------------------------------------------------------------
+
+
+
+
