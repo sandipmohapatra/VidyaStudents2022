@@ -151,19 +151,11 @@ step 2:-paste it on the desktop
 
 step 3:-change the html page.
 
-step 4:-goto the path
-
-step 5:-set java path
-
-set path=C:\Program Files\Java\jdk-14.0.2\bin;.;
-
-or
-
+set the path of the prject on the command prompt 
+------------------------------------
 drag and drop
-
-*make change in the html file.
 ---------------------------------------------
-step 6:-jar -cvf job.war .
+step 6:-jar -cvf  job.war .
 
 step 7:-paste the war file into C:\bea\user_projects\domains\mydomain\applications
 
