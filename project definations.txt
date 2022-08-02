@@ -159,4 +159,16 @@ step 6:-jar -cvf  job.war .
 
 step 7:-paste the war file into C:\bea\user_projects\domains\mydomain\applications
 
-
+-----------------------------------------------
+email validation
+-----------------------------------------------
+var x="swarna@gmail.com";
+if(x.indexOf("@")==-1)
+{
+console.log("The email is invalid");
+}
+else
+{
+console.log("The email is valid");
+}
+---------------------------------------------------------------------
