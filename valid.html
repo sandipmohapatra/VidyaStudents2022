@@ -1,0 +1,102 @@
+<html>
+<script>
+function fun()
+{
+var a=f1.t1.value;
+var b=f1.t2.value;
+var c=f1.t3.value;
+var d=f1.t4.value;
+var e=f1.t5.value;
+var f=f1.t6.value;
+var g=f1.t7.value;
+
+if(a=="")
+{
+alert("enter your name");
+f1.t1.focus();
+}
+else if(b=="")
+{
+alert("enter your password");
+f1.t2.focus();
+}
+else if(c=="")
+{
+alert("enter your DOB");
+f1.t3.focus();
+}
+else if(d=="")
+{
+alert("enter your email");
+f1.t4.focus();
+}
+else if(d.indexOf("@")==-1)
+{
+alert("not a valid email");
+f1.t4.focus();
+}
+else if(e=="")
+{
+alert("enter your phone no");
+f1.t5.focus();
+}
+else if(isNaN(e))
+{
+alert("enter number only");
+f1.t5.focus();
+}
+else if(e==0)
+{
+alert("phone no cannot be zero");
+f1.t5.focus();
+}
+else if(e.length!=10)
+{
+alert("enter your phone no 10 digits");
+f1.t5.focus();
+}
+else if(f=="")
+{
+alert("enter your addhar no");
+f1.t6.focus();
+}
+else if(isNaN(f))
+{
+alert(" addhar no should be no");
+f1.t6.focus();
+}
+else if(f.length!=16)
+{
+alert("enter addhar no 16 digits");
+f1.t6.focus();
+}
+else if(g=="")
+{
+alert("enter your address");
+f1.t7.focus();
+}
+else
+{
+f1.submit();
+alert("Data submitted successfully");
+}
+}
+</script>
+<body bgcolor=yellow>
+<h1><center>Student Registration page</center></h1><hr>
+<form action="second" name=f1>
+<table>
+<tr><td>Enter your name<td><input type=text name=t1 size=20 placeholder="enter your name"></tr>
+<tr><td>Enter your password<td><input type=password name=t2 size=20 placeholder="enter your password"></tr>
+<tr><td>Enter your DOB<td><input type=date name=t3 size=20 ></tr>
+<tr><td>Enter your email<td><input type=email name=t4 size=20 placeholder="enter your email" ></tr>
+
+<tr><td>Enter your Phoneno<td><input type=text name=t5 size=20 placeholder="enter your phone no" ></tr>
+<tr><td>Enter your Addhar no<td><input type=text name=t6 size=20 placeholder="enter your addhar no" ></tr>
+
+<tr><td>Enter your address<td><textarea name=t7 rows=5 cols=21 placeholder="enter your address"></textarea></tr>
+<tr><td><td><input type=button value=submit onclick=fun()></tr>
+</table>
+</form>
+</body>
+</html>
