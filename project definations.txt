@@ -172,3 +172,20 @@ else
 console.log("The email is valid");
 }
 ---------------------------------------------------------------------
+step 1:- goto the project path in the command prompt
+
+step 2:-drag and drop set.env
+
+step 3:-goto the admin.java and change the username/password
+
+step 4:-compile the program
+
+step 5:-javac -d web-inf/classes *.java
+
+step 6:-jar -cvf event.war .
+
+----------------------------------------------------------------------------------------
+
+
+
+
